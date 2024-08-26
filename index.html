@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>תודה רבה</title>
+    <style>
+        body {
+            direction: rtl;
+            font-family: Arial, sans-serif;
+            background: url('./background-thankyou.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 50, 0.6); /* שכבה כחולה חצי שקופה */
+        }
+        .thank-you-container {
+            background-color: rgba(207, 211, 228, 0.89);
+            padding: 40px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            text-align: center;
+            max-width: 90%;
+            width: 100%;
+            max-width: 600px;
+            position: relative;
+            z-index: 2; /* מעל השכבה */
+        }
+        .thank-you-container h1 {
+            color: #0066cc;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .thank-you-container p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+        .thank-you-container .details {
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 30px;
+            text-align: right;
+        }
+        .thank-you-container .btn {
+            background-color: #0066cc;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            display: inline-block;
+        }
+        .thank-you-container .btn:hover {
+            background-color: #005bb5;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .thank-you-container h1 {
+                font-size: 2em;
+            }
+            .thank-you-container p {
+                font-size: 1em;
+            }
+            .thank-you-container .btn {
+                padding: 12px 24px;
+                font-size: 1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .thank-you-container h1 {
+                font-size: 1.8em;
+            }
+            .thank-you-container p {
+                font-size: 0.9em;
+            }
+            .thank-you-container .btn {
+                padding: 10px 20px;
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="thank-you-container">
+        <h1>תודה רבה!</h1>
+        <p>ניצור קשר בהקדם האפשרי כדי להצמיח את העסק שלך קדימה ולהשיג את התוצאות המקסימליות ביותר עבורך.</p>
+        <a href="homepage.html" class="btn">חזרה לדף הבית</a>
+    </div>
+</body>
+</html>
